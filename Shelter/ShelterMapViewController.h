@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet MKMapView *shelterMapView;
 
 @property (weak, nonatomic) IBOutlet UIButton *filterButton;
+- (IBAction)refresh:(id)sender;
 
 @end

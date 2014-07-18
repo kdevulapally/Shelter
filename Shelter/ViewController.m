@@ -26,7 +26,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.images = @[[UIImage imageNamed:@"image1.jpg"], [UIImage imageNamed:@"image2.jpg"], [UIImage imageNamed:@"image3.jpg"], [UIImage imageNamed:@"image4.jpg"], [UIImage imageNamed:@"image5.jpg"], [UIImage imageNamed:@"image6.jpg"]];
+    self.images = @[[UIImage imageNamed:@"image2.jpg"], [UIImage imageNamed:@"image7.jpg"], [UIImage imageNamed:@"image4.jpg"], [UIImage imageNamed:@"image5.jpg"], [UIImage imageNamed:@"image6.jpg"]];
     [self.screenSaver.layer setBorderWidth:1];
     [self.screenSaver.layer setBorderColor:[UIColor blackColor].CGColor];
     self.storytitlesArray = @[@"Test", @"Hello"];
