@@ -55,8 +55,8 @@ typedef enum {
     self.foodLocations = [[NSMutableArray alloc] init];
     self.shelterMaleLocations = [[NSMutableArray alloc] init];
     self.shelterFemaleLocations = [[NSMutableArray alloc] init];
-    [self loadLocationFromSource:@"Food.plist" toCollection:self.shelterMaleLocations];
-    [self loadLocationFromSource:@"property.plist" toCollection:self.shelterFemaleLocations];
+    [self loadLocationFromSource:@"Food.plist" toCollection:self.shelterMaleLocations withCategory:shelter];
+    [self loadLocationFromSource:@"property.plist" toCollection:self.shelterFemaleLocations withCategory:shelter];
     [self mapLocations];
     
 }
@@ -101,7 +101,21 @@ typedef enum {
             MKAnnotationView *pinAnnotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
             pinAnnotationView.enabled = YES;
             pinAnnotationView.canShowCallout = YES;
-            pinAnnotationView.image = [UIImage imageNamed:@"homePin.png"];
+            ShelterLocation * shelterloc = (ShelterLocation *)annotation;
+            switch (shelterloc.type) {
+                case shelter:
+                    pinAnnotationView.image = [UIImage imageNamed:@"home.png"];
+                    break;
+                case food:
+                    pinAnnotationView.image = [UIImage imageNamed:@"food.png"];
+                    break;
+                case medicare:
+                    pinAnnotationView.image = [UIImage imageNamed:@"medicare.png"];
+                    break;
+                default:
+                    pinAnnotationView.image = [UIImage imageNamed:@"home.png"];
+                    break;
+            }
             return pinAnnotationView;
         } else {
             annotationView.annotation = annotation;
@@ -194,7 +208,7 @@ typedef enum {
     [self.shelterMapView removeAnnotations:locaitons];
     [self.shelterMapView reloadInputViews];
 }
-- (void)loadLocationFromSource:(NSString *)source toCollection:(NSMutableArray *)collection{
+- (void)loadLocationFromSource:(NSString *)source toCollection:(NSMutableArray *)collection withCategory:(ShelterCategory)type{
     NSString *path = [[NSBundle mainBundle] bundlePath];
     NSString *finalPath = [path stringByAppendingPathComponent:source];
     NSDictionary *plistData = [NSArray arrayWithContentsOfFile:finalPath];
@@ -204,10 +218,17 @@ typedef enum {
         ShelterLocation * location = [[ShelterLocation alloc] initWithName:[data valueForKeyPath:@"Shelter Name"] address:[data valueForKeyPath:@"Street"] coordinate:loc];
         location.phone = [data valueForKeyPath:@"Phone"];
         location.beds = [data valueForKeyPath:@"beds"];
+        location.type = type;
         [collection addObject:location];
     }
 }
 
 - (IBAction)refresh:(id)sender {
+    ShelterLocation * loc = [self.shelterMaleLocations objectAtIndex:0];
+    
+    [self.shelterMapView removeAnnotation:loc];
+    loc.beds = @"0";
+    [self.shelterMapView addAnnotation:loc];
+    [self.shelterMapView reloadInputViews];
 }
 @end

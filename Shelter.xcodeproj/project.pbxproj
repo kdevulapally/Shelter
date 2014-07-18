@@ -20,6 +20,9 @@
 		770653F1197981810072A79A /* checked2.png in Resources */ = {isa = PBXBuildFile; fileRef = 770653F0197981810072A79A /* checked2.png */; };
 		770653F3197982C70072A79A /* checked3.png in Resources */ = {isa = PBXBuildFile; fileRef = 770653F2197982C70072A79A /* checked3.png */; };
 		770653F519798BA70072A79A /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 770653F419798BA70072A79A /* Property List.plist */; };
+		770653F9197995420072A79A /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 770653F6197995420072A79A /* home.png */; };
+		770653FA197995420072A79A /* medicare.png in Resources */ = {isa = PBXBuildFile; fileRef = 770653F7197995420072A79A /* medicare.png */; };
+		770653FB197995420072A79A /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = 770653F8197995420072A79A /* food.png */; };
 		77937ADA1978B2E00091FFA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77937AD91978B2E00091FFA0 /* Foundation.framework */; };
 		77937ADC1978B2E00091FFA0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77937ADB1978B2E00091FFA0 /* CoreGraphics.framework */; };
 		77937ADE1978B2E00091FFA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77937ADD1978B2E00091FFA0 /* UIKit.framework */; };
@@ -68,6 +71,9 @@
 		770653F0197981810072A79A /* checked2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked2.png; sourceTree = "<group>"; };
 		770653F2197982C70072A79A /* checked3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked3.png; sourceTree = "<group>"; };
 		770653F419798BA70072A79A /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		770653F6197995420072A79A /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		770653F7197995420072A79A /* medicare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medicare.png; sourceTree = "<group>"; };
+		770653F8197995420072A79A /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
 		77937AD61978B2E00091FFA0 /* Shelter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shelter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77937AD91978B2E00091FFA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		77937ADB1978B2E00091FFA0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -160,6 +166,9 @@
 		77937ADF1978B2E00091FFA0 /* Shelter */ = {
 			isa = PBXGroup;
 			children = (
+				770653F6197995420072A79A /* home.png */,
+				770653F7197995420072A79A /* medicare.png */,
+				770653F8197995420072A79A /* food.png */,
 				770653F419798BA70072A79A /* Property List.plist */,
 				770653F2197982C70072A79A /* checked3.png */,
 				770653F0197981810072A79A /* checked2.png */,
@@ -320,7 +329,10 @@
 				73CB54A51979684800B9F0F2 /* Image4.jpg in Resources */,
 				73EB22B8197979E1008D6729 /* Cover.png in Resources */,
 				77937B221978CFE20091FFA0 /* uncheckBox.png in Resources */,
+				770653FB197995420072A79A /* food.png in Resources */,
+				770653F9197995420072A79A /* home.png in Resources */,
 				73EB22BC19797AF6008D6729 /* cross39.png in Resources */,
+				770653FA197995420072A79A /* medicare.png in Resources */,
 				73CB54A81979684800B9F0F2 /* QRCode.png in Resources */,
 				73CB54A61979684800B9F0F2 /* Image5.jpg in Resources */,
 				77937AF21978B2E00091FFA0 /* Images.xcassets in Resources */,
