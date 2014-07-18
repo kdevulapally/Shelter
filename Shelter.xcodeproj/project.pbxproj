@@ -14,6 +14,11 @@
 		73CB54A61979684800B9F0F2 /* Image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73CB549F1979684800B9F0F2 /* Image5.jpg */; };
 		73CB54A71979684800B9F0F2 /* Image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73CB54A01979684800B9F0F2 /* Image6.jpg */; };
 		73CB54A81979684800B9F0F2 /* QRCode.png in Resources */ = {isa = PBXBuildFile; fileRef = 73CB54A11979684800B9F0F2 /* QRCode.png */; };
+		770653ED19796DC30072A79A /* Food.plist in Resources */ = {isa = PBXBuildFile; fileRef = 770653EC19796DC30072A79A /* Food.plist */; };
+		770653EF197979F00072A79A /* homePin.png in Resources */ = {isa = PBXBuildFile; fileRef = 770653EE197979F00072A79A /* homePin.png */; };
+		770653F1197981810072A79A /* checked2.png in Resources */ = {isa = PBXBuildFile; fileRef = 770653F0197981810072A79A /* checked2.png */; };
+		770653F3197982C70072A79A /* checked3.png in Resources */ = {isa = PBXBuildFile; fileRef = 770653F2197982C70072A79A /* checked3.png */; };
+		770653F519798BA70072A79A /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 770653F419798BA70072A79A /* Property List.plist */; };
 		77937ADA1978B2E00091FFA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77937AD91978B2E00091FFA0 /* Foundation.framework */; };
 		77937ADC1978B2E00091FFA0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77937ADB1978B2E00091FFA0 /* CoreGraphics.framework */; };
 		77937ADE1978B2E00091FFA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77937ADD1978B2E00091FFA0 /* UIKit.framework */; };
@@ -56,6 +61,11 @@
 		73CB549F1979684800B9F0F2 /* Image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image5.jpg; sourceTree = "<group>"; };
 		73CB54A01979684800B9F0F2 /* Image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image6.jpg; sourceTree = "<group>"; };
 		73CB54A11979684800B9F0F2 /* QRCode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRCode.png; sourceTree = "<group>"; };
+		770653EC19796DC30072A79A /* Food.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Food.plist; sourceTree = "<group>"; };
+		770653EE197979F00072A79A /* homePin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homePin.png; sourceTree = "<group>"; };
+		770653F0197981810072A79A /* checked2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked2.png; sourceTree = "<group>"; };
+		770653F2197982C70072A79A /* checked3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked3.png; sourceTree = "<group>"; };
+		770653F419798BA70072A79A /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		77937AD61978B2E00091FFA0 /* Shelter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shelter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77937AD91978B2E00091FFA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		77937ADB1978B2E00091FFA0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -148,6 +158,11 @@
 		77937ADF1978B2E00091FFA0 /* Shelter */ = {
 			isa = PBXGroup;
 			children = (
+				770653F419798BA70072A79A /* Property List.plist */,
+				770653F2197982C70072A79A /* checked3.png */,
+				770653F0197981810072A79A /* checked2.png */,
+				770653EE197979F00072A79A /* homePin.png */,
+				770653EC19796DC30072A79A /* Food.plist */,
 				77937B231978D0BB0091FFA0 /* checked.png */,
 				73CB549B1979684800B9F0F2 /* Image1.jpg */,
 				73CB549C1979684800B9F0F2 /* Image2.jpg */,
@@ -297,6 +312,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770653F519798BA70072A79A /* Property List.plist in Resources */,
+				770653ED19796DC30072A79A /* Food.plist in Resources */,
 				73CB54A51979684800B9F0F2 /* Image4.jpg in Resources */,
 				77937B221978CFE20091FFA0 /* uncheckBox.png in Resources */,
 				73CB54A81979684800B9F0F2 /* QRCode.png in Resources */,
@@ -304,9 +321,12 @@
 				77937AF21978B2E00091FFA0 /* Images.xcassets in Resources */,
 				77937AE41978B2E00091FFA0 /* InfoPlist.strings in Resources */,
 				77937B241978D0BB0091FFA0 /* checked.png in Resources */,
+				770653F1197981810072A79A /* checked2.png in Resources */,
+				770653EF197979F00072A79A /* homePin.png in Resources */,
 				73CB54A21979684800B9F0F2 /* Image1.jpg in Resources */,
 				77937B201978CC910091FFA0 /* general_pin.png in Resources */,
 				73CB54A31979684800B9F0F2 /* Image2.jpg in Resources */,
+				770653F3197982C70072A79A /* checked3.png in Resources */,
 				73CB54A41979684800B9F0F2 /* Image3.jpg in Resources */,
 				73CB54A71979684800B9F0F2 /* Image6.jpg in Resources */,
 				77937AED1978B2E00091FFA0 /* Main.storyboard in Resources */,

@@ -35,7 +35,7 @@
 }
 
 - (NSString *)subtitle {
-    return _address;
+    return [NSString stringWithFormat:@"phone: %@, Beds available:%@ at %@",self.phone,self.beds,_address ];
 }
 
 - (CLLocationCoordinate2D)coordinate {
@@ -51,7 +51,6 @@
     
     MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];
     mapItem.name = self.title;
-    
     return mapItem;
 }
 @end

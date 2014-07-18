@@ -52,23 +52,27 @@ typedef enum {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     _shelterMapView.delegate = self;
+    self.foodLocations = [[NSMutableArray alloc] init];
+    self.shelterMaleLocations = [[NSMutableArray alloc] init];
+    self.shelterFemaleLocations = [[NSMutableArray alloc] init];
+    [self loadLocationFromSource:@"Food.plist" toCollection:self.shelterMaleLocations];
+    [self loadLocationFromSource:@"property.plist" toCollection:self.shelterFemaleLocations];
     [self mapLocations];
+    
 }
 
 -(void)mapLocations {
     
     CLLocationCoordinate2D loc = CLLocationCoordinate2DMake(41.8858327415, -87.6413823149);
-    
-    ShelterLocation *annotation = [[ShelterLocation alloc] initWithName:@"TEST" address:@"111 N Canal" coordinate:loc];
-    [self.shelterMapView addAnnotation:annotation];
-    
     MKCoordinateRegion region;
     region.center = loc;
     MKCoordinateSpan span;
-    span.latitudeDelta = 0.05;
-    span.longitudeDelta = 0.05;
+    span.latitudeDelta = 0.1;
+    span.longitudeDelta = 0.1;
     region.span=span;
     [self.shelterMapView setRegion:region animated:TRUE];
+    [self addAnnotationOnMap:self.shelterMaleLocations];
+     [self addAnnotationOnMap:self.shelterFemaleLocations];
 }
 
 - (void)didReceiveMemoryWarning
@@ -92,12 +96,13 @@ typedef enum {
     static NSString *identifier = @"MyLocation";
     if ([annotation isKindOfClass:[ShelterLocation class]]) {
         
-        MKAnnotationView *annotationView = (MKAnnotationView *) [_shelterMapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        MKPinAnnotationView *annotationView = (MKPinAnnotationView *) [_shelterMapView dequeueReusableAnnotationViewWithIdentifier:identifier];
         if (annotationView == nil) {
-            annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
-            annotationView.enabled = YES;
-            annotationView.canShowCallout = YES;
-            annotationView.image = [UIImage imageNamed:@"general_pin.png "];//here we use a nice image instead of the default pins
+            MKAnnotationView *pinAnnotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+            pinAnnotationView.enabled = YES;
+            pinAnnotationView.canShowCallout = YES;
+            pinAnnotationView.image = [UIImage imageNamed:@"homePin.png"];
+            return pinAnnotationView;
         } else {
             annotationView.annotation = annotation;
         }
@@ -114,18 +119,32 @@ typedef enum {
     NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
     [location.mapItem openInMapsWithLaunchOptions:launchOptions];
 }
+
+- (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)annotationViews
+{
+    for (MKAnnotationView *annView in annotationViews)
+    {
+        CGRect endFrame = annView.frame;
+        annView.frame = CGRectOffset(endFrame, 0, -500);
+        [UIView animateWithDuration:0.5
+                         animations:^{ annView.frame = endFrame; }];
+    }
+}
+
+
+
 - (IBAction)filterButton:(id)sender {
     UIButton *button = (UIButton *)sender;
+
     if(button.tag %100 != 0) {
-        [button setImage:[UIImage imageNamed:@"checked.png"] forState:UIControlStateNormal];
-        [self updateMapWithFilter:button.tag/100 andAction:AddPin];
+        [button setImage:[UIImage imageNamed:@"uncheckbox.png"] forState:UIControlStateNormal];
+        [self updateMapWithFilter:button.tag andAction:RemovePin];
         button.tag = button.tag *100;
     } else {
-        [button setImage:[UIImage imageNamed:@"uncheckbox.png"] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"checked3.png"] forState:UIControlStateNormal];
         button.tag = (int)button.tag/100;
-        [self updateMapWithFilter:button.tag andAction:RemovePin];
+        [self updateMapWithFilter:button.tag andAction:AddPin];
     }
-
 }
 
 
@@ -167,14 +186,25 @@ typedef enum {
 }
 
 - (void)addAnnotationOnMap:(NSArray *)locations {
-    for (ShelterLocation * shelter in locations) {
-        [self.shelterMapView addAnnotation:shelter];
-    }
+    [self.shelterMapView addAnnotations:locations];
+    [self.shelterMapView reloadInputViews];
 }
 
 - (void)removeAnnotationOnMAp:(NSArray *)locaitons {
-    for (ShelterLocation * shelter in locaitons) {
-        [self.shelterMapView removeAnnotation:shelter];
+    [self.shelterMapView removeAnnotations:locaitons];
+    [self.shelterMapView reloadInputViews];
+}
+- (void)loadLocationFromSource:(NSString *)source toCollection:(NSMutableArray *)collection{
+    NSString *path = [[NSBundle mainBundle] bundlePath];
+    NSString *finalPath = [path stringByAppendingPathComponent:source];
+    NSDictionary *plistData = [NSArray arrayWithContentsOfFile:finalPath];
+    NSLog(@"food :%@",plistData);
+    for (NSObject * data in plistData) {
+        CLLocationCoordinate2D  loc = CLLocationCoordinate2DMake([[data valueForKeyPath:@"Latitude"] doubleValue], [[data valueForKeyPath:@"Longitude"] doubleValue]);
+        ShelterLocation * location = [[ShelterLocation alloc] initWithName:[data valueForKeyPath:@"Shelter Name"] address:[data valueForKeyPath:@"Street"] coordinate:loc];
+        location.phone = [data valueForKeyPath:@"Phone"];
+        location.beds = [data valueForKeyPath:@"beds"];
+        [collection addObject:location];
     }
 }
 

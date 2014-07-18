@@ -10,6 +10,10 @@
 #import <MapKit/MapKit.h>
 
 @interface ShelterLocation : NSObject <MKAnnotation>
+
+
+@property (nonatomic, strong) NSString *phone;
+@property (nonatomic, strong) NSString *beds;
 - (id)initWithName:(NSString*)name address:(NSString*)address coordinate:(CLLocationCoordinate2D)coordinate;
 - (MKMapItem*)mapItem;
 @end

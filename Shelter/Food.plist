@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>beds</key>
+		<string>4</string>
+		<key>Shelter Name</key>
+		<string>Pacific Garden Mission</string>
+		<key>Street</key>
+		<string>1458 S Canal St</string>
+		<key>City</key>
+		<string>Chicago</string>
+		<key>State</key>
+		<string>Illinois</string>
+		<key>Zip</key>
+		<string>60605</string>
+		<key>Phone</key>
+		<string>312-492-9410</string>
+		<key>Latitude</key>
+		<string>41.862007</string>
+		<key>Longitude</key>
+		<string>-87.639884</string>
+	</dict>
+	<dict>
+		<key>beds</key>
+		<string>3</string>
+		<key>Shelter Name</key>
+		<string>Deborah&apos;s Place</string>
+		<key>Street</key>
+		<string>2822 West Jackson Blvd</string>
+		<key>City</key>
+		<string>Chicago</string>
+		<key>State</key>
+		<string>Illinois</string>
+		<key>Zip</key>
+		<string>60612</string>
+		<key>Phone</key>
+		<string>773-722-5080</string>
+		<key>Latitude</key>
+		<string>41.87744550000001</string>
+		<key>Longitude</key>
+		<string>-87.6968776</string>
+	</dict>
+	<dict>
+		<key>beds</key>
+		<string>10</string>
+		<key>Shelter Name</key>
+		<string>Interfaith House</string>
+		<key>Street</key>
+		<string>2456 W. Franklin Blvd</string>
+		<key>City</key>
+		<string>Chicago</string>
+		<key>State</key>
+		<string>Illinois</string>
+		<key>Zip</key>
+		<string>60624</string>
+		<key>Phone</key>
+		<string>773-533-6013</string>
+		<key>Latitude</key>
+		<string>41.8902347</string>
+		<key>Longitude</key>
+		<string>-87.71248409999998</string>
+	</dict>
+	<dict>
+		<key>beds</key>
+		<string>5</string>
+		<key>Shelter Name</key>
+		<string>Primo Center For Women And Children</string>
+		<key>Street</key>
+		<string>4241 West Washington Boulevard</string>
+		<key>City</key>
+		<string>Chicago</string>
+		<key>State</key>
+		<string>Illinois</string>
+		<key>Zip</key>
+		<string>60624</string>
+		<key>Phone</key>
+		<string>773-722-0544</string>
+		<key>Latitude</key>
+		<string>41.8815979</string>
+		<key>Longitude</key>
+		<string>-87.73211900000001</string>
+	</dict>
+	<dict>
+		<key>beds</key>
+		<string>8</string>
+		<key>Shelter Name</key>
+		<string>Jireh House</string>
+		<key>Street</key>
+		<string>3122 W 59th St, Ste 2</string>
+		<key>City</key>
+		<string>Chicago</string>
+		<key>State</key>
+		<string>Illinois</string>
+		<key>Zip</key>
+		<string>60629</string>
+		<key>Phone</key>
+		<string>773-435-8300</string>
+		<key>Latitude</key>
+		<string>41.7862796</string>
+		<key>Longitude</key>
+		<string>-87.70188919999998</string>
+	</dict>
+</array>
+</plist>
