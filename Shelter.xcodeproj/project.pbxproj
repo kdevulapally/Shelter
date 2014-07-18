@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73CB54A21979684800B9F0F2 /* Image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73CB549B1979684800B9F0F2 /* Image1.jpg */; };
+		73CB54A31979684800B9F0F2 /* Image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73CB549C1979684800B9F0F2 /* Image2.jpg */; };
+		73CB54A41979684800B9F0F2 /* Image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73CB549D1979684800B9F0F2 /* Image3.jpg */; };
+		73CB54A51979684800B9F0F2 /* Image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73CB549E1979684800B9F0F2 /* Image4.jpg */; };
+		73CB54A61979684800B9F0F2 /* Image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73CB549F1979684800B9F0F2 /* Image5.jpg */; };
+		73CB54A71979684800B9F0F2 /* Image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73CB54A01979684800B9F0F2 /* Image6.jpg */; };
+		73CB54A81979684800B9F0F2 /* QRCode.png in Resources */ = {isa = PBXBuildFile; fileRef = 73CB54A11979684800B9F0F2 /* QRCode.png */; };
 		77937ADA1978B2E00091FFA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77937AD91978B2E00091FFA0 /* Foundation.framework */; };
 		77937ADC1978B2E00091FFA0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77937ADB1978B2E00091FFA0 /* CoreGraphics.framework */; };
 		77937ADE1978B2E00091FFA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77937ADD1978B2E00091FFA0 /* UIKit.framework */; };
@@ -21,6 +28,14 @@
 		77937AFB1978B2E00091FFA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77937ADD1978B2E00091FFA0 /* UIKit.framework */; };
 		77937B031978B2E00091FFA0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77937B011978B2E00091FFA0 /* InfoPlist.strings */; };
 		77937B051978B2E00091FFA0 /* ShelterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77937B041978B2E00091FFA0 /* ShelterTests.m */; };
+		77937B111978B62B0091FFA0 /* JBKenBurnsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77937B101978B62B0091FFA0 /* JBKenBurnsView.m */; };
+		77937B131978BB2C0091FFA0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77937B121978BB2C0091FFA0 /* MapKit.framework */; };
+		77937B161978BDD30091FFA0 /* ShelterMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77937B151978BDD30091FFA0 /* ShelterMapViewController.m */; };
+		77937B191978C1950091FFA0 /* ShelterLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 77937B181978C1950091FFA0 /* ShelterLocation.m */; };
+		77937B1C1978C7160091FFA0 /* FilterButtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 77937B1B1978C7160091FFA0 /* FilterButtom.m */; };
+		77937B201978CC910091FFA0 /* general_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 77937B1F1978CC910091FFA0 /* general_pin.png */; };
+		77937B221978CFE20091FFA0 /* uncheckBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 77937B211978CFE20091FFA0 /* uncheckBox.png */; };
+		77937B241978D0BB0091FFA0 /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 77937B231978D0BB0091FFA0 /* checked.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73CB549B1979684800B9F0F2 /* Image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image1.jpg; sourceTree = "<group>"; };
+		73CB549C1979684800B9F0F2 /* Image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image2.jpg; sourceTree = "<group>"; };
+		73CB549D1979684800B9F0F2 /* Image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image3.jpg; sourceTree = "<group>"; };
+		73CB549E1979684800B9F0F2 /* Image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image4.jpg; sourceTree = "<group>"; };
+		73CB549F1979684800B9F0F2 /* Image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image5.jpg; sourceTree = "<group>"; };
+		73CB54A01979684800B9F0F2 /* Image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image6.jpg; sourceTree = "<group>"; };
+		73CB54A11979684800B9F0F2 /* QRCode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRCode.png; sourceTree = "<group>"; };
 		77937AD61978B2E00091FFA0 /* Shelter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shelter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77937AD91978B2E00091FFA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		77937ADB1978B2E00091FFA0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +75,18 @@
 		77937B001978B2E00091FFA0 /* ShelterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShelterTests-Info.plist"; sourceTree = "<group>"; };
 		77937B021978B2E00091FFA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		77937B041978B2E00091FFA0 /* ShelterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShelterTests.m; sourceTree = "<group>"; };
+		77937B0F1978B62B0091FFA0 /* JBKenBurnsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBKenBurnsView.h; sourceTree = "<group>"; };
+		77937B101978B62B0091FFA0 /* JBKenBurnsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBKenBurnsView.m; sourceTree = "<group>"; };
+		77937B121978BB2C0091FFA0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		77937B141978BDD30091FFA0 /* ShelterMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShelterMapViewController.h; sourceTree = "<group>"; };
+		77937B151978BDD30091FFA0 /* ShelterMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShelterMapViewController.m; sourceTree = "<group>"; };
+		77937B171978C1950091FFA0 /* ShelterLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShelterLocation.h; sourceTree = "<group>"; };
+		77937B181978C1950091FFA0 /* ShelterLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShelterLocation.m; sourceTree = "<group>"; };
+		77937B1A1978C7160091FFA0 /* FilterButtom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterButtom.h; sourceTree = "<group>"; };
+		77937B1B1978C7160091FFA0 /* FilterButtom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterButtom.m; sourceTree = "<group>"; };
+		77937B1F1978CC910091FFA0 /* general_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = general_pin.png; sourceTree = "<group>"; };
+		77937B211978CFE20091FFA0 /* uncheckBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uncheckBox.png; sourceTree = "<group>"; };
+		77937B231978D0BB0091FFA0 /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +96,7 @@
 			files = (
 				77937ADC1978B2E00091FFA0 /* CoreGraphics.framework in Frameworks */,
 				77937ADE1978B2E00091FFA0 /* UIKit.framework in Frameworks */,
+				77937B131978BB2C0091FFA0 /* MapKit.framework in Frameworks */,
 				77937ADA1978B2E00091FFA0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +136,7 @@
 		77937AD81978B2E00091FFA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77937B121978BB2C0091FFA0 /* MapKit.framework */,
 				77937AD91978B2E00091FFA0 /* Foundation.framework */,
 				77937ADB1978B2E00091FFA0 /* CoreGraphics.framework */,
 				77937ADD1978B2E00091FFA0 /* UIKit.framework */,
@@ -112,13 +148,30 @@
 		77937ADF1978B2E00091FFA0 /* Shelter */ = {
 			isa = PBXGroup;
 			children = (
+				77937B231978D0BB0091FFA0 /* checked.png */,
+				73CB549B1979684800B9F0F2 /* Image1.jpg */,
+				73CB549C1979684800B9F0F2 /* Image2.jpg */,
+				73CB549D1979684800B9F0F2 /* Image3.jpg */,
+				73CB549E1979684800B9F0F2 /* Image4.jpg */,
+				73CB549F1979684800B9F0F2 /* Image5.jpg */,
+				73CB54A01979684800B9F0F2 /* Image6.jpg */,
+				73CB54A11979684800B9F0F2 /* QRCode.png */,
+				77937B211978CFE20091FFA0 /* uncheckBox.png */,
+				77937B1F1978CC910091FFA0 /* general_pin.png */,
+				77937B0E1978B62B0091FFA0 /* KenBurns */,
 				77937AE81978B2E00091FFA0 /* AppDelegate.h */,
 				77937AE91978B2E00091FFA0 /* AppDelegate.m */,
 				77937AEB1978B2E00091FFA0 /* Main.storyboard */,
 				77937AEE1978B2E00091FFA0 /* ViewController.h */,
 				77937AEF1978B2E00091FFA0 /* ViewController.m */,
 				77937AF11978B2E00091FFA0 /* Images.xcassets */,
+				77937B141978BDD30091FFA0 /* ShelterMapViewController.h */,
+				77937B151978BDD30091FFA0 /* ShelterMapViewController.m */,
 				77937AE01978B2E00091FFA0 /* Supporting Files */,
+				77937B171978C1950091FFA0 /* ShelterLocation.h */,
+				77937B181978C1950091FFA0 /* ShelterLocation.m */,
+				77937B1A1978C7160091FFA0 /* FilterButtom.h */,
+				77937B1B1978C7160091FFA0 /* FilterButtom.m */,
 			);
 			path = Shelter;
 			sourceTree = "<group>";
@@ -150,6 +203,15 @@
 				77937B011978B2E00091FFA0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77937B0E1978B62B0091FFA0 /* KenBurns */ = {
+			isa = PBXGroup;
+			children = (
+				77937B0F1978B62B0091FFA0 /* JBKenBurnsView.h */,
+				77937B101978B62B0091FFA0 /* JBKenBurnsView.m */,
+			);
+			path = KenBurns;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +261,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = SolsticExpressDay;
 				TargetAttributes = {
+					77937AD51978B2E00091FFA0 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					77937AF61978B2E00091FFA0 = {
 						TestTargetID = 77937AD51978B2E00091FFA0;
 					};
@@ -228,8 +297,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73CB54A51979684800B9F0F2 /* Image4.jpg in Resources */,
+				77937B221978CFE20091FFA0 /* uncheckBox.png in Resources */,
+				73CB54A81979684800B9F0F2 /* QRCode.png in Resources */,
+				73CB54A61979684800B9F0F2 /* Image5.jpg in Resources */,
 				77937AF21978B2E00091FFA0 /* Images.xcassets in Resources */,
 				77937AE41978B2E00091FFA0 /* InfoPlist.strings in Resources */,
+				77937B241978D0BB0091FFA0 /* checked.png in Resources */,
+				73CB54A21979684800B9F0F2 /* Image1.jpg in Resources */,
+				77937B201978CC910091FFA0 /* general_pin.png in Resources */,
+				73CB54A31979684800B9F0F2 /* Image2.jpg in Resources */,
+				73CB54A41979684800B9F0F2 /* Image3.jpg in Resources */,
+				73CB54A71979684800B9F0F2 /* Image6.jpg in Resources */,
 				77937AED1978B2E00091FFA0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,7 +329,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				77937AF01978B2E00091FFA0 /* ViewController.m in Sources */,
+				77937B1C1978C7160091FFA0 /* FilterButtom.m in Sources */,
+				77937B161978BDD30091FFA0 /* ShelterMapViewController.m in Sources */,
+				77937B191978C1950091FFA0 /* ShelterLocation.m in Sources */,
 				77937AEA1978B2E00091FFA0 /* AppDelegate.m in Sources */,
+				77937B111978B62B0091FFA0 /* JBKenBurnsView.m in Sources */,
 				77937AE61978B2E00091FFA0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +541,7 @@
 				77937B0A1978B2E00091FFA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77937B0B1978B2E00091FFA0 /* Build configuration list for PBXNativeTarget "ShelterTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +550,7 @@
 				77937B0D1978B2E00091FFA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FilterButtom.h
 //  Shelter
 //
 //  Created by KArthik KAshyap on 7/17/14.
@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JBKenBurnsView.h"
-@interface ViewController : UIViewController <KenBurnsViewDelegate>
+
+@interface FilterButtom : UIButton
 
 @end
