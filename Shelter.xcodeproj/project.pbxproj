@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73B822CB197994B300894295 /* Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 73B822CA197994B300894295 /* Screen.png */; };
+		73B822CD1979953500894295 /* App Icon-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 73B822CC1979953500894295 /* App Icon-02.png */; };
 		73CB54A31979684800B9F0F2 /* Image7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73CB549C1979684800B9F0F2 /* Image7.jpg */; };
 		73CB54A41979684800B9F0F2 /* Image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73CB549D1979684800B9F0F2 /* Image2.jpg */; };
 		73CB54A51979684800B9F0F2 /* Image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73CB549E1979684800B9F0F2 /* Image4.jpg */; };
 		73CB54A61979684800B9F0F2 /* Image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73CB549F1979684800B9F0F2 /* Image5.jpg */; };
 		73CB54A71979684800B9F0F2 /* Image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73CB54A01979684800B9F0F2 /* Image6.jpg */; };
 		73CB54A81979684800B9F0F2 /* QRCode.png in Resources */ = {isa = PBXBuildFile; fileRef = 73CB54A11979684800B9F0F2 /* QRCode.png */; };
-		73EB22B8197979E1008D6729 /* Cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 73EB22B5197979E1008D6729 /* Cover.png */; };
 		73EB22B9197979E1008D6729 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73EB22B6197979E1008D6729 /* image1.jpg */; };
 		73EB22BA197979E1008D6729 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73EB22B7197979E1008D6729 /* image3.jpg */; };
 		73EB22BC19797AF6008D6729 /* cross39.png in Resources */ = {isa = PBXBuildFile; fileRef = 73EB22BB19797AF6008D6729 /* cross39.png */; };
@@ -52,13 +53,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73B822CA197994B300894295 /* Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screen.png; sourceTree = "<group>"; };
+		73B822CC1979953500894295 /* App Icon-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon-02.png"; sourceTree = "<group>"; };
 		73CB549C1979684800B9F0F2 /* Image7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image7.jpg; sourceTree = "<group>"; };
 		73CB549D1979684800B9F0F2 /* Image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image2.jpg; sourceTree = "<group>"; };
 		73CB549E1979684800B9F0F2 /* Image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image4.jpg; sourceTree = "<group>"; };
 		73CB549F1979684800B9F0F2 /* Image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image5.jpg; sourceTree = "<group>"; };
 		73CB54A01979684800B9F0F2 /* Image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image6.jpg; sourceTree = "<group>"; };
 		73CB54A11979684800B9F0F2 /* QRCode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRCode.png; sourceTree = "<group>"; };
-		73EB22B5197979E1008D6729 /* Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cover.png; sourceTree = "<group>"; };
 		73EB22B6197979E1008D6729 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 		73EB22B7197979E1008D6729 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
 		73EB22BB19797AF6008D6729 /* cross39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross39.png; sourceTree = "<group>"; };
@@ -154,8 +156,9 @@
 		77937ADF1978B2E00091FFA0 /* Shelter */ = {
 			isa = PBXGroup;
 			children = (
+				73B822CC1979953500894295 /* App Icon-02.png */,
+				73B822CA197994B300894295 /* Screen.png */,
 				73EB22BB19797AF6008D6729 /* cross39.png */,
-				73EB22B5197979E1008D6729 /* Cover.png */,
 				73EB22B6197979E1008D6729 /* image1.jpg */,
 				73EB22B7197979E1008D6729 /* image3.jpg */,
 				77937B231978D0BB0091FFA0 /* checked.png */,
@@ -307,7 +310,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				73CB54A51979684800B9F0F2 /* Image4.jpg in Resources */,
-				73EB22B8197979E1008D6729 /* Cover.png in Resources */,
 				77937B221978CFE20091FFA0 /* uncheckBox.png in Resources */,
 				73EB22B9197979E1008D6729 /* image1.jpg in Resources */,
 				73EB22BC19797AF6008D6729 /* cross39.png in Resources */,
@@ -318,7 +320,9 @@
 				77937B241978D0BB0091FFA0 /* checked.png in Resources */,
 				77937B201978CC910091FFA0 /* general_pin.png in Resources */,
 				73EB22BA197979E1008D6729 /* image3.jpg in Resources */,
+				73B822CB197994B300894295 /* Screen.png in Resources */,
 				73CB54A31979684800B9F0F2 /* Image7.jpg in Resources */,
+				73B822CD1979953500894295 /* App Icon-02.png in Resources */,
 				73CB54A41979684800B9F0F2 /* Image2.jpg in Resources */,
 				73CB54A71979684800B9F0F2 /* Image6.jpg in Resources */,
 				77937AED1978B2E00091FFA0 /* Main.storyboard in Resources */,
